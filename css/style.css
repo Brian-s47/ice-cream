@@ -4,33 +4,47 @@
     padding: 0;
   box-sizing: border-box;
 }  
+body{
+    background: var(--color-8);
+}
 header{
-    background: red;
+    /* background: red; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 .header__logo{
-    background: blue;
+    /* background: blue; */
 }
 .header__logo img{
     
 }
 .header__nav{
-    background: green;
+    /* background: green; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 54px;
 }
 .header__nav li{
-    
+    /* background: yellow; */
+    list-style: none;
 }
 .header__nav li a{
-    
+    font-family: "Poppins-SemiBold";
+    color: var(--color-1);
+    text-decoration: none;
+    font-size: 28px; 
+    display: flex;   
 }
 .header__nav li a img{
     
 }
 .header__menu{
-    background: violet;    
+    /* background: violet;     */
 }
 .header__menu img{
     

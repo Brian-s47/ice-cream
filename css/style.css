@@ -7,7 +7,7 @@
 body{
     background: var(--color-8);
 }
-/******* Header********/
+/************************************ Header ****************************************/
 header{
     /* background: red; */
     display: flex;
@@ -49,4 +49,38 @@ header{
 }
 .header__menu img{
     
+}
+/************************************* Main *****************************************/
+main{
+    background: green;
+    padding-top: 45px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.section__container{
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.article__jumping{
+    width: 679px;
+    background: violet;
+    display: flex;
+    flex-direction: column;
+}
+.article__jumping h1{
+    color: var(--color-1);
+    font-family: "Poppins-SemiBold";
+    font-size: 120px;
+    line-height: 110px;
+}
+.article__jumping p{
+    font-family: "Poppins-Medium";
+}
+.div__buttons{
+    background: rebeccapurple;
+    display: flex;
+}
+.div__buttons a{
+    font-family: "Poppins-Regular";
 }

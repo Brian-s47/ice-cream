@@ -6,7 +6,7 @@
 }  
 body{
     background-image: url(../storage/img/background.png);
-    background: var(--color-8);
+    /* background: var(--color-8); */
 }
 /************************************ Header ****************************************/
 header{
@@ -42,8 +42,7 @@ header{
     font-size: 28px; 
     display: flex;   
 }
-.header__nav li a img{
-    
+.header__nav li a img{ 
 }
 .header__menu{
     /* background: violet;     */
@@ -53,7 +52,7 @@ header{
 }
 /************************************* Main *****************************************/
 main{
-    background: green;
+    /* background: green; */
     padding-top: 45px;
     padding-left: 75px;
     padding-right: 75px;
@@ -106,4 +105,57 @@ main{
 .div__buttons a:hover{
     border: none;
     backdrop-filter: blur(24px);
+}
+.article__reviews {
+    /* background: red; */
+    padding: 20px;
+}
+.div__reviews-container {
+    width: 345px;
+    height: 202px;
+    background: var(--color-1);
+    border-radius: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__reviews-cards {
+    /* background: green; */
+    /* padding: 20px; */
+}
+.div__reviews-profile {
+    /* background: violet; */
+    gap: 16px;    
+    /* padding: 20px; */
+    display: flex;
+}
+.div__reviews-profile img{
+    object-fit: contain;
+    /* background: orange; */
+    /* padding: 20px; */
+}
+.div__reviews-cards p{
+    color: var(--color-7);
+    font-family: "Poppins-Medium";
+    font-size: 18px;
+    text-align: justify;
+}
+.div__reviews-rating {
+    /* background: yellow; */
+    /* padding: 20px; */
+}
+.div__reviews-rating h3{
+    color: var(--color-2);
+    font-family: "Poppins-Medium";
+    font-size: 28px;
+}
+.div__reviews-stars {
+    /* background: olive; */
+    margin-top: 5px;
+    /* padding: 20px; */
+}
+.div__reviews-stars img{
+    /* background: turquoise; */
+    /* padding: 0%; */
 }

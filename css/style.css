@@ -2,9 +2,10 @@
 *{
     margin: 0;
     padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }  
 body{
+    background-image: url(../storage/img/background.png);
     background: var(--color-8);
 }
 /************************************ Header ****************************************/
@@ -64,7 +65,7 @@ main{
 }
 .article__jumping{
     width: 679px;
-    background: violet;
+    /* background: violet; */
     display: flex;
     flex-direction: column;
 }
@@ -75,12 +76,34 @@ main{
     line-height: 110px;
 }
 .article__jumping p{
+    margin-top: 26px;
     font-family: "Poppins-Medium";
+    font-size: 24px;
+    color: var(--color-6);  
+    line-height: 123%;
 }
 .div__buttons{
-    background: rebeccapurple;
-    display: flex;
+    margin-top: 26px;
+    /* background: rebeccapurple; */
+    display: flex;   
+    gap: 38px;
 }
 .div__buttons a{
-    font-family: "Poppins-Regular";
+    width: 264px;
+    height: 86px;
+    border-radius: 14px;
+    border: 1px solid var(--color-1);
+    background: transparent;
+    font-family: "Poppins-Thin";
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--color-1);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__buttons a:hover{
+    border: none;
+    backdrop-filter: blur(24px);
 }

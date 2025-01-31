@@ -20,4 +20,7 @@
     
     font-family: "Poppins-Regular";
     src: url(../storage/font/Poppins/Poppins-Regular.ttf);
+
+    font-family: "Poppins-Thin";
+    src: url(../storage/font/Poppins/Poppins-Thin.ttf);
 }

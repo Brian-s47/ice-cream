@@ -6,6 +6,11 @@
 }  
 body{
     background-image: url(../storage/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-color: var(--color-8);
+
     /* background: var(--color-8); */
 }
 /************************************ Header ****************************************/
@@ -14,7 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-left: 75px;
     padding-right: 75px;
 }
@@ -61,6 +66,7 @@ main{
     /* background: blue; */
     display: flex;
     justify-content: space-between;
+    margin-top: 111px;
 }
 .article__jumping{
     width: 679px;
@@ -72,7 +78,7 @@ main{
     color: var(--color-1);
     font-family: "Poppins-SemiBold";
     font-size: 120px;
-    line-height: 110px;
+    line-height: 91.4%;
 }
 .article__jumping p{
     margin-top: 26px;
@@ -106,9 +112,68 @@ main{
     border: none;
     backdrop-filter: blur(24px);
 }
+#reviews {
+    /* background: blue; */
+    /* height: 281px; */
+    height: 221px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 27px;
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	/* padding-bottom: calc(var(--cards) * var(--cardTopPadding)); */
+	/* margin-bottom: var(--cardMargin); */
+}
+/* Oculta la barra de desplazamiento predeterminada */
+#reviews::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Personaliza el riel de la barra de desplazamiento */
+#reviews::-webkit-scrollbar-track {
+    background: transparent; /* Color del fondo */
+}
+
+/* Personaliza el 'thumb' de la barra de desplazamiento */
+#reviews::-webkit-scrollbar-thumb {
+    background: var(--color-1); /* Color del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estiliza el thumb cuando se pasa el cursor sobre él */
+#reviews::-webkit-scrollbar-thumb:hover {
+    background: var(--color-6);
+    cursor: grab;
+}
+#reviews::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+/* Estiliza los botones de la barra de desplazamiento (si los hay) */
+#reviews::-webkit-scrollbar-button {
+    display: none;
+}
+.div__reviews-container:nth-child(1){
+    --index: 1;
+}
+.div__reviews-container:nth-child(2){
+    --index: 2;
+
+    /* top: 20px; */
+}
+.div__reviews-container:nth-child(3){
+    --index: 3;
+    /* top: 40px; */
+}
+.div__reviews-container:nth-child(4){
+    --index: 4;
+    /* top: 60px; */
+}
+
 .article__reviews {
     /* background: red; */
-    padding: 20px;
+    overflow-y: auto;
 }
 .div__reviews-container {
     width: 345px;
@@ -119,10 +184,33 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: 1px solid var(--color-5);
+    position: sticky;
+    top: 0px;
+    padding-top: calc(var(--index) * var(--cardToppadding));
+    z-index: var(--index);
 }
 .div__reviews-cards {
     /* background: green; */
     /* padding: 20px; */
+}
+.div__reviews-cards::after {
+    content: "x";
+    cursor: pointer;
+    font-family: "Poppins-Medium";
+    color: var(--color-1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--color-8);
+    border: 1px solid var(--color-6);
+    border-radius: 100%;
+    left: -18px;
+    top: -18px;
 }
 .div__reviews-profile {
     /* background: violet; */
@@ -136,10 +224,12 @@ main{
     /* padding: 20px; */
 }
 .div__reviews-cards p{
-    color: var(--color-7);
     font-family: "Poppins-Medium";
-    font-size: 18px;
     text-align: justify;
+    margin-top: 12px;
+    font-size: 18px;
+    color: var(--color-7);
+    width: 277px;
 }
 .div__reviews-rating {
     /* background: yellow; */
@@ -157,5 +247,5 @@ main{
 }
 .div__reviews-stars img{
     /* background: turquoise; */
-    /* padding: 0%; */
+    padding: 0%;
 }

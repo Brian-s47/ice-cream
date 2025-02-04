@@ -10,6 +10,7 @@ body{
     background-size: cover;
     background-position: top center;
     background-color: var(--color-8);
+    /* background-position: 50% 50%; */
     /* background: var(--color-8); */
 }
 /************************************ Header ****************************************/
@@ -246,3 +247,35 @@ main{
     /* background: turquoise; */
     padding: 0%;
 }
+.div__chose-type {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 75px;
+}
+.div__chose-type h3{
+    color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+}
+.div__choose-type-buttons {
+    /* background: green; */
+    display: flex;
+    justify-content: space-between;
+}
+.div__choose-type-buttons a{
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background: var(--color-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    backdrop-filter: blur(3px);/* Efecto frosted glass */
+}
+.div__choose-type-buttons img{
+
+}
+

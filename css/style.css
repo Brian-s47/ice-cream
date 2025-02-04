@@ -275,6 +275,64 @@ main{
     backdrop-filter: blur(3px);/* Efecto frosted glass */
 }
 .div__choose-type-buttons img{
+}
+.section__container-products {
+    background: red;
+    padding: 20px;
 
 }
+.form__container-product {
+}
+.div__trendy{
+    background: var(--color-1);
+    width: 213px;
+    height: 54px;
+    border-radius: 52px;
+}
+.div__trendy h2{
+    color: var(--color-2);
+    font-family: "Poppins-Medium";
+    font-size: 28px;
+}
+.div__trendy img{
+    
+}
+.article__products{
+}
+.form__container-product{
+
+}
+.form__container-product:hover{
+
+}
+.div__product {
+}
+.div__product h3{
+    color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 28px;
+}
+.div__product span{
+    color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+}
+.div__type-order {
+
+}
+.div__type-order input[type="submit"]{
+    color: var(--color-1);
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+}
+.div__product-amount {
+}
+.div__product-amount label{
+    color: var(--color-1);
+    font-family: "Poppins-Regular";
+    font-size: 28px;
+}
+.div__product-amount input[type="number"]{
+}
+
 

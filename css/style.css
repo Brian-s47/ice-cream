@@ -10,7 +10,6 @@ body{
     background-size: cover;
     background-position: top center;
     background-color: var(--color-8);
-
     /* background: var(--color-8); */
 }
 /************************************ Header ****************************************/
@@ -170,7 +169,6 @@ main{
     --index: 4;
     /* top: 60px; */
 }
-
 .article__reviews {
     /* background: red; */
     overflow-y: auto;
@@ -180,11 +178,10 @@ main{
     height: 202px;
     background: var(--color-1);
     border-radius: 18px;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
-
     border: 1px solid var(--color-5);
     position: sticky;
     top: 0px;

@@ -443,5 +443,33 @@ main{
 }
 .div__product-amount input[type="number"]{
 }
+/************************************* Fotter *****************************************/
+footer{
+    /* background: red; */
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 51px;
+}
+.footer__social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 75px;
+    gap: 48px;
+}
+footer p{
+    color: var(--color-1);
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+
+    padding-left: 75px;
+}
+.footer__social img{
+    width: 39px;
+    height: 39px;
+}
 

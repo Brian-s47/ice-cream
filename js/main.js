@@ -42,7 +42,7 @@ const products = [
     }
 ]
 
-let plantilla = ""
+let plantilla = "";
 
 for (let i = 0; i < products.length; i++){
     plantilla += `
@@ -55,7 +55,7 @@ for (let i = 0; i < products.length; i++){
                     ${submit(products[i]["type-order"])}
                 </div>
             <div class="div__product-amount">
-                <label>${discount(products[i][price])} </label>
+                <label>${discount(products[i][price])}</label>
                 <div class="quantity-products">
                     <button class="rest">+</button>
                     <input type="number" name="amount" value="1">
